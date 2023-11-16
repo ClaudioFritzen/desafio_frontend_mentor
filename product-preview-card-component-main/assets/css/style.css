@@ -143,7 +143,7 @@ button:hover{
     }
 
     .img-container{
-        background-image: url(/assets/images/image-product-mobile.jpg);
+        background-image: url(assets/images/image-product-mobile.jpg);
         /* height: 480px; */
         border-radius: 8px 8px 0 0;
         width: 100%;
@@ -169,7 +169,7 @@ button:hover{
     overflow: hidden;
   }
   .img-container{
-    background-image: url(/assets/images/image-product-mobile.jpg);
+    background-image: url(assets/images/image-product-mobile.jpg);
     width: 100%; 
   }
 
@@ -177,6 +177,8 @@ button:hover{
     padding: 24px;
   }
 }
+
+
 @media screen and (max-width: 280px){
 
   .container{
@@ -189,7 +191,7 @@ button:hover{
   }
   
   .img-container{
-    background-image: url(/assets/images/image-product-mobile.jpg);
+    background-image: url(assets/images/image-product-mobile.jpg);
     width: 100%; 
   }
 
