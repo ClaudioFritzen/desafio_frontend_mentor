@@ -9,38 +9,41 @@ body{
    
     font-size: 14px;
     margin: auto;
-    background-color: hsl(30, 38%, 92%);
-    
-    
+    background-color: hsl(30, 38%, 92%); 
 
 }
 
 .container{
     width: 600px;
-    display: flex;
-    flex-direction: row;
+    
     margin: 10% auto;
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 
 
 }
 
-.img-container{
 
+.img-container{
     width: 300px;
     height: 450px;
     background-image: url(/assets/images/image-product-desktop.jpg);
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    
 
 }
+
 
 
 .descricao{
    width: 300px;
-   height: 450px;
+   height: 300px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -132,7 +135,67 @@ button:hover{
 }
 
 
+/*=============== BREAKPOINTS ===============*/
 
+/* For small devices */
+@media screen and (max-width: 300px){
+
+  .container{
+    max-width: 270px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .img-container{
+    background-image: url(/assets/images/image-product-mobile.jpg);
+    width: 100%; 
+
+  }
+
+  .descricao{
+    padding: 14px;
+  }
+  .text-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+  }
+  .subtitle{
+    margin-bottom: 0.9rem;
+  }
+  h1{
+    margin: 0;
+    font-size: 24px;
+  }
+  p{
+    margin: 0;
+  }
+ 
+}
+
+/* - mobile: 375px */
+@media screen and (max-width: 375px){
+  .container{
+   width: 300px;
+   overflow: hidden; 
+ }
+ .img-container{
+   background-image: url(/assets/images/image-product-mobile.jpg);
+   background-repeat: no-repeat;
+   height: 400px;
+   width: 350px; 
+ }
+
+
+ .descricao{
+   padding: 24px;
+ }
+}
 
 
 @media screen and (max-width:768px) {
@@ -143,7 +206,7 @@ button:hover{
     }
 
     .img-container{
-        background-image: url(assets/images/image-product-mobile.jpg);
+        
         /* height: 480px; */
         border-radius: 8px 8px 0 0;
         width: 100%;
@@ -163,42 +226,10 @@ button:hover{
 
 
 
-/* - mobile: 375px */
-@media screen and (max-width: 375px){
-  .container{
-    overflow: hidden;
-  }
-  .img-container{
-    background-image: url(assets/images/image-product-mobile.jpg);
-    width: 100%; 
-  }
-
-  .descricao{
-    padding: 24px;
-  }
-}
 
 
-@media screen and (max-width: 280px){
 
-  .container{
-    max-width: 270px;
-    height: 612px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .img-container{
-    background-image: url(assets/images/image-product-mobile.jpg);
-    width: 100%; 
-  }
 
-  .descricao{
-    padding: 14px;
-  }
-}
 /* 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
