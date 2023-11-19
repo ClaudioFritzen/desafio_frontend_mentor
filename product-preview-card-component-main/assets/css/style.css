@@ -15,7 +15,6 @@ body{
 
 .container{
     width: 600px;
-    
     margin: 10% auto;
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
@@ -25,8 +24,6 @@ body{
     align-items: center;
     justify-content: center;
     
-
-
 }
 
 
@@ -180,6 +177,7 @@ button:hover{
 
 /* - mobile: 375px */
 @media screen and (max-width: 375px){
+  
   .container{
    width: 300px;
    overflow: hidden; 
@@ -187,13 +185,37 @@ button:hover{
  .img-container{
    background-image: url(/assets/images/image-product-mobile.jpg);
    background-repeat: no-repeat;
-   height: 400px;
-   width: 350px; 
+   background-position: center;
+   width: 300px;
+   height: 300px;
  }
 
 
  .descricao{
    padding: 24px;
+   flex-direction: column;
+   display: flex;
+   justify-content: space-around;
+ }
+ .text-description{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .subtitle{
+   margin:0;
+
+ }
+
+ h1{
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+ }
+
+ p{
+  margin: 0;
  }
 }
 
