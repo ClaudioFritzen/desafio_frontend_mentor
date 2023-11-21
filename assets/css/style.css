@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+   
+    font-size: 14px;
+    margin: auto;
+    background-color: hsl(30, 38%, 92%); 
+
+}
+
+.container{
+    width: 600px;
+    margin: 10% auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.img-container{
+    width: 300px;
+    height: 450px;
+    background-image: url(/assets/images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    
+
+}
+
+
+
+.descricao{
+   width: 300px;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 32px;
+
+
+}
+
+.text-description{
+    max-width: 236px;
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h1{
+    margin-bottom: 24px;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+p{
+    margin-bottom: 29px;
+    color: hsl(228, 12%, 48%);
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.value{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin: 1.5rem 0 1.5rem 0;
+    
+    
+}
+
+.onSale{
+    color:hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+
+      
+}
+
+.original-value{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+
+button{
+    width: 236px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color:  hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+
+    /* tetxtos*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px; 
+}
+
+button img{
+    margin-right: 11.61px;
+}
+
+button:hover{
+    background-color:hsl(161, 96%, 18%);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For small devices */
+@media screen and (max-width: 300px){
+
+  .container{
+    max-width: 270px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .img-container{
+    background-image: url(/assets/images/image-product-mobile.jpg);
+    width: 100%; 
+
+  }
+
+  .descricao{
+    padding: 14px;
+  }
+  .text-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+  }
+  .subtitle{
+    margin-bottom: 0.9rem;
+  }
+  h1{
+    margin: 0;
+    font-size: 24px;
+  }
+  p{
+    margin: 0;
+  }
+ 
+}
+
+/* - mobile: 375px */
+@media screen and (max-width: 375px){
+  
+  .container{
+   width: 300px;
+   overflow: hidden; 
+ }
+ .img-container{
+   background-image: url(/assets/images/image-product-mobile.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 300px;
+   height: 300px;
+ }
+
+
+ .descricao{
+   padding: 24px;
+   flex-direction: column;
+   display: flex;
+   justify-content: space-around;
+ }
+ .text-description{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .subtitle{
+   margin:0;
+
+ }
+
+ h1{
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+ }
+
+ p{
+  margin: 0;
+ }
+}
+
+ /* For medium devices */
+  
+@media screen and (max-width:576px ){
+
+  .container{
+    width: 350px;
+
+  }
+  .img-container{
+    width: 300px;
+    height: 300px;
+
+  }
+  .descricao{
+    width: 350px;
+  }
+
+  .text-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+
+  .subtitle{
+    margin: 0;
+  }
+  h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  p{
+    margin: 0;
+    
+  }
+}
+
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 343px;
+        height: 612px;
+        flex-direction: column;
+    }
+
+    .img-container{
+        
+        height: 480px;
+        border-radius: 8px 8px 0 0;
+        width: 100%; 
+       
+    }
+
+    .descricao{
+        padding: 0;
+    }
+    
+    .text-description{
+        width: 295px;
+
+    }
+}
+
+
+
+
+
+
+
+/* 
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+/* @media screen and (max-width: 320px) {
+
+    .container{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .profile__info{
+      column-gap: 1.5rem;
+  
+    }
+  
+    .profile__buttons{
+      flex-direction: column;
+      row-gap: 1rem;
+  
+    }
+  
+    .skills__box{
+      column-gap: 1rem;
+    }
+    
+  } */
+
+
+
+  /* For medium devices */
+  /* 
+  @media screen and (min-width:576px ) {
+    .projects__content{
+      grid-template-columns: 332px;
+      justify-content: center;
+    }
+    .filters__content{
+      width: 332px;
+      margin: 3rem auto;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width: 776px) {
+    .projets__content,
+    .skills__content{
+      grid-template-columns: repeat(2, 332px);
+    }
+    .skills__content{
+      justify-content: center;
+      column-gap: 3rem;
+    }
+  } */
+
+  /* For large devices */
+  
+ /*  @media screen and (min-width: 992px) {
+    .container{
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+    .change-theme{
+      top:2.5rem;
+      right: 2.5em;;
+    }
+  
+    .profile{
+      padding-top: 4rem;
+  
+    }
+  
+    .profile__border{
+      width: 135px;
+      height: 135px;
+      margin-bottom: 1rem;
+  
+    }
+  
+    .profile__perfil{
+      width: 120px;
+      height: 120px;
+  
+    }
+  
+    .profile__perfil img{
+      width: 90px;
+  
+    }
+  
+    .profile__profession{
+      margin-bottom: 1.5rem;
+  
+    }
+  
+    .profile__info{
+      column-gap: 3rem;
+    }
+  
+    .profile__info_description{
+      font-size: var(--small-font-size);
+  
+    }
+  
+    .profile__buttons{
+      column-gap: 2rem;
+    }
+  
+    .projects__content{
+      gap: 2rem 3rem;
+    }
+    
+    .projects__modal{
+      padding: 1.5rem;
+    }
+  
+    .skills__title{
+      font-size: var(--normal-font-size);
+      margin-bottom: 2.5rem;
+    }
+  
+    .footer__copy{
+      margin: 4.5rem;
+    }
+  
+  }
+   */
